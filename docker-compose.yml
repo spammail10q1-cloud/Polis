@@ -1,0 +1,56 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-polis}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-polis}
+    volumes:
+      - polis_pgdata:/var/lib/postgresql/data
+      - ./docker/postgres-init.sql:/docker-entrypoint-initdb.d/01-polis.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-polis} -d ${POSTGRES_DB:-polis}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-polis}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-polis}
+      SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in .env}
+      ENVIRONMENT: ${ENVIRONMENT:-production}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+      DEMO_SEED: ${DEMO_SEED:-true}
+      DEMO_EMAIL: ${DEMO_EMAIL:-demo@polis.health}
+      DEMO_PASSWORD: ${DEMO_PASSWORD:-PolisDemo!2026}
+      ALLOW_REGISTRATION: ${ALLOW_REGISTRATION:-true}
+      LLM_PROVIDER: ${LLM_PROVIDER:-deterministic}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-gpt-4.1-mini}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        BACKEND_URL: http://backend:8000
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+volumes:
+  polis_pgdata:

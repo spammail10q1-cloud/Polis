@@ -1,0 +1,491 @@
+[
+  {
+    "id": "metoprolol",
+    "name": "Metoprolol succinate",
+    "generic_name": "metoprolol",
+    "drug_class": "Beta-1 selective adrenergic blocker",
+    "atc_code": "C07AB02",
+    "mechanism_summary": "Selective beta-1 adrenergic receptor blockade reduces heart rate, contractility and renin release. Oral metoprolol undergoes extensive first-pass metabolism, primarily by CYP2D6.",
+    "enzyme_pathways": [
+      {"gene": "CYP2D6", "role": "primary oxidative metabolism", "contribution": 0.75, "evidence": "FDA labeling; PharmGKB"}
+    ],
+    "transporter_pathways": [],
+    "half_life_hours": 4.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.05,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 4.0, "low": 3.0, "high": 7.0, "source": "FDA metoprolol labeling: elimination half-life approximately 3–7 hours, formulation dependent"},
+      "v_per_kg": {"value": 4.2, "source": "Published population PK estimates for metoprolol; illustrative apparent volume"},
+      "bioavailability": {"value": 0.4, "source": "FDA labeling: oral bioavailability approximately 40–50%; formulation dependent"},
+      "ka_per_h": {"value": 1.1, "source": "Illustrative absorption rate for an immediate-release oral dose"},
+      "reference_note": "Relative concentration-time visualization only. Extended-release products have different absorption profiles that this one-compartment model does not capture."
+    },
+    "warnings": [
+      "Do not stop beta-blockers abruptly without clinician guidance.",
+      "CYP2D6 poor metabolizers may have higher metoprolol exposure; clinical response and heart rate still require professional assessment."
+    ],
+    "evidence_refs": ["fda-metoprolol-label", "pharmgkb-cyp2d6", "cpic-gene-drug-index"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative one-compartment oral PK parameters assembled from public labeling and population PK literature. This is not a validated PBPK model and is not suitable for dosing."
+  },
+  {
+    "id": "omeprazole",
+    "name": "Omeprazole",
+    "generic_name": "omeprazole",
+    "drug_class": "Proton pump inhibitor",
+    "atc_code": "A02BC01",
+    "mechanism_summary": "Irreversibly inhibits gastric parietal-cell H+/K+-ATPase. Metabolized mainly by CYP2C19 and, to a lesser extent, CYP3A4. Omeprazole can also inhibit CYP2C19.",
+    "enzyme_pathways": [
+      {"gene": "CYP2C19", "role": "primary metabolism", "contribution": 0.8, "evidence": "FDA labeling"},
+      {"gene": "CYP3A4", "role": "minor metabolism", "contribution": 0.2, "evidence": "FDA labeling"}
+    ],
+    "transporter_pathways": [],
+    "half_life_hours": 0.8,
+    "route_options": ["oral"],
+    "renal_fraction": 0.75,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 0.8, "low": 0.5, "high": 1.0, "source": "FDA omeprazole labeling: plasma half-life approximately 0.5–1 hour"},
+      "v_per_kg": {"value": 0.35, "source": "Illustrative apparent volume from published PK summaries"},
+      "bioavailability": {"value": 0.5, "source": "FDA labeling: oral bioavailability approximately 30–60% depending on formulation"},
+      "ka_per_h": {"value": 0.8, "source": "Illustrative absorption rate; enteric coating delays absorption"},
+      "reference_note": "Enteric-coated and delayed-release products are not represented by this simplified model."
+    },
+    "warnings": [
+      "Omeprazole is a CYP2C19 inhibitor and may reduce activation of clopidogrel; this combination has an FDA warning.",
+      "Long-term proton-pump inhibitor use has clinical considerations that require professional review."
+    ],
+    "evidence_refs": ["fda-omeprazole-label", "cpic-cyp2c19-ppi", "fda-clopidogrel-cyp2c19"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative one-compartment oral PK parameters. Active metabolites and delayed-release formulation behavior are not modeled."
+  },
+  {
+    "id": "clopidogrel",
+    "name": "Clopidogrel",
+    "generic_name": "clopidogrel bisulfate",
+    "drug_class": "P2Y12 platelet inhibitor (prodrug)",
+    "atc_code": "B01AC04",
+    "mechanism_summary": "A prodrug requiring hepatic activation, predominantly by CYP2C19, to form the active thiol metabolite that irreversibly blocks platelet P2Y12 receptors. CYP2C19 poor and intermediate metabolizers form less active metabolite, and CYP2C19 inhibitors such as omeprazole can reduce activation.",
+    "enzyme_pathways": [
+      {"gene": "CYP2C19", "role": "prodrug activation", "contribution": 0.65, "evidence": "CPIC 2022 guideline; FDA boxed warning"},
+      {"gene": "CYP3A4", "role": "prodrug activation", "contribution": 0.2, "evidence": "FDA labeling"},
+      {"gene": "CYP1A2", "role": "prodrug activation", "contribution": 0.15, "evidence": "FDA labeling"}
+    ],
+    "transporter_pathways": [],
+    "half_life_hours": 6.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.05,
+    "simulation_model": "pathway_index",
+    "simulation_config": {
+      "index_label": "Relative active-metabolite formation potential",
+      "index_basis": "Weighted CYP2C19/CYP3A4/CYP1A2 activity relative to a reference normal metabolizer, with no interacting drugs. This is a mechanistic index, not an efficacy prediction.",
+      "reference_note": "The active thiol metabolite is not directly modeled. Platelet function, clinical indication, and bleeding/thrombotic risk are outside this model."
+    },
+    "warnings": [
+      "FDA boxed warning: diminished antiplatelet effect in CYP2C19 poor metabolizers.",
+      "Avoid relying on this simulation for decisions about antiplatelet therapy; urgent clinical questions require a clinician or pharmacist.",
+      "Omeprazole and other CYP2C19 inhibitors may reduce clopidogrel activation."
+    ],
+    "evidence_refs": ["cpic-clopidogrel-2022", "fda-clopidogrel-cyp2c19", "fda-omeprazole-label"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Pathway-index model only. No dosing, efficacy, bleeding-risk, or cardiovascular-outcome estimate is produced."
+  },
+  {
+    "id": "simvastatin",
+    "name": "Simvastatin",
+    "generic_name": "simvastatin",
+    "drug_class": "HMG-CoA reductase inhibitor (statin)",
+    "atc_code": "C10AA01",
+    "mechanism_summary": "Inhibits HMG-CoA reductase and upregulates hepatic LDL receptors. Intestinal and hepatic exposure is influenced by OATP1B1 (SLCO1B1) transport and CYP3A4 metabolism.",
+    "enzyme_pathways": [
+      {"gene": "CYP3A4", "role": "oxidative metabolism", "contribution": 0.55, "evidence": "FDA labeling"},
+      {"gene": "SLCO1B1", "role": "hepatic OATP1B1 uptake transport", "contribution": 0.45, "evidence": "CPIC SLCO1B1 guideline; FDA labeling"}
+    ],
+    "transporter_pathways": [
+      {"gene": "SLCO1B1", "role": "OATP1B1 hepatic uptake", "evidence": "CPIC 2014 guideline"}
+    ],
+    "half_life_hours": 1.9,
+    "route_options": ["oral"],
+    "renal_fraction": 0.13,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 1.9, "low": 1.0, "high": 3.0, "source": "FDA simvastatin labeling: elimination half-life approximately 1.9 hours"},
+      "v_per_kg": {"value": 1.0, "source": "Illustrative apparent volume for an oral statin; not a validated product-specific estimate"},
+      "bioavailability": {"value": 0.05, "source": "FDA labeling: low systemic oral bioavailability (<5%)"},
+      "ka_per_h": {"value": 1.2, "source": "Illustrative absorption rate"},
+      "reference_note": "SLCO1B1 is represented as an exposure modifier in a simplified manner. Muscle toxicity risk is not modeled."
+    },
+    "warnings": [
+      "Simvastatin has dose-dependent myopathy risk; interacting CYP3A4 inhibitors can increase exposure.",
+      "This simulation does not estimate muscle toxicity or lipid-lowering effect."
+    ],
+    "evidence_refs": ["cpic-slco1b1-simvastatin", "fda-simvastatin-label", "fda-ddi-guidance"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative one-compartment PK with a simplified transporter contribution. Not suitable for dosing."
+  },
+  {
+    "id": "atorvastatin",
+    "name": "Atorvastatin",
+    "generic_name": "atorvastatin calcium",
+    "drug_class": "HMG-CoA reductase inhibitor (statin)",
+    "atc_code": "C10AA05",
+    "mechanism_summary": "Inhibits HMG-CoA reductase and increases hepatic LDL-receptor expression. Metabolized by CYP3A4; OATP1B1 transport affects hepatic uptake.",
+    "enzyme_pathways": [
+      {"gene": "CYP3A4", "role": "oxidative metabolism", "contribution": 0.7, "evidence": "FDA labeling"},
+      {"gene": "SLCO1B1", "role": "hepatic uptake transport", "contribution": 0.3, "evidence": "pharmacogenomic literature"}
+    ],
+    "transporter_pathways": [{"gene": "SLCO1B1", "role": "OATP1B1 hepatic uptake"}],
+    "half_life_hours": 14.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.02,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 14.0, "low": 11.0, "high": 30.0, "source": "FDA atorvastatin labeling: elimination half-life approximately 14 hours; active metabolites longer"},
+      "v_per_kg": {"value": 5.4, "source": "FDA labeling: apparent volume of distribution approximately 381 L"},
+      "bioavailability": {"value": 0.14, "source": "FDA labeling: oral bioavailability approximately 14%"},
+      "ka_per_h": {"value": 1.0, "source": "Illustrative absorption rate"},
+      "reference_note": "Active metabolites are not modeled separately."
+    },
+    "warnings": ["Statin-associated muscle symptoms require clinical assessment, not interpretation from this model."],
+    "evidence_refs": ["fda-atorvastatin-label", "pharmgkb-slco1b1"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative one-compartment PK; not a validated atorvastatin PBPK model."
+  },
+  {
+    "id": "warfarin",
+    "name": "Warfarin",
+    "generic_name": "warfarin sodium",
+    "drug_class": "Vitamin K antagonist anticoagulant",
+    "atc_code": "B01AA03",
+    "mechanism_summary": "Inhibits vitamin K epoxide reductase (VKORC1), reducing synthesis of vitamin K-dependent clotting factors. S-warfarin, the more potent enantiomer, is metabolized primarily by CYP2C9. VKORC1 genotype affects pharmacodynamic sensitivity.",
+    "enzyme_pathways": [
+      {"gene": "CYP2C9", "role": "S-warfarin metabolism", "contribution": 0.75, "evidence": "CPIC warfarin guideline; FDA labeling"},
+      {"gene": "CYP2C19", "role": "R-warfarin metabolism", "contribution": 0.1, "evidence": "FDA labeling"},
+      {"gene": "CYP1A2", "role": "R-warfarin metabolism", "contribution": 0.15, "evidence": "FDA labeling"}
+    ],
+    "transporter_pathways": [],
+    "half_life_hours": 40.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.0,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 40.0, "low": 20.0, "high": 60.0, "source": "FDA warfarin labeling: mean half-life approximately 40 hours (range ~20–60)"},
+      "v_per_kg": {"value": 0.14, "source": "FDA labeling: volume of distribution approximately 0.14 L/kg"},
+      "bioavailability": {"value": 0.99, "source": "FDA labeling: highly bioavailable"},
+      "ka_per_h": {"value": 1.0, "source": "Illustrative absorption rate"},
+      "reference_note": "PK-only model. VKORC1 pharmacodynamic sensitivity and INR are NOT modeled."
+    },
+    "warnings": [
+      "Warfarin has a narrow therapeutic index and serious bleeding risk.",
+      "INR monitoring and anticoagulation management must be directed by a qualified clinician; no dose is calculated here.",
+      "VKORC1 and CYP2C9 genotype interpretations exist, but this simulation does not predict INR or bleeding."
+    ],
+    "evidence_refs": ["cpic-warfarin-2017", "fda-warfarin-label", "fda-ddi-guidance"],
+    "is_simulation_eligible": true,
+    "parameter_note": "PK-only illustrative model. Pharmacodynamic effect and INR are explicitly out of scope."
+  },
+  {
+    "id": "ibuprofen",
+    "name": "Ibuprofen",
+    "generic_name": "ibuprofen",
+    "drug_class": "Nonsteroidal anti-inflammatory drug (NSAID)",
+    "atc_code": "M01AE01",
+    "mechanism_summary": "Reversibly inhibits cyclooxygenase-1 and -2, reducing prostaglandin synthesis. Metabolized mainly by CYP2C9.",
+    "enzyme_pathways": [
+      {"gene": "CYP2C9", "role": "oxidative metabolism", "contribution": 0.85, "evidence": "FDA labeling"}
+    ],
+    "transporter_pathways": [],
+    "half_life_hours": 2.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.0,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 2.0, "low": 1.8, "high": 2.5, "source": "FDA ibuprofen labeling"},
+      "v_per_kg": {"value": 0.15, "source": "Published PK summaries; illustrative apparent volume"},
+      "bioavailability": {"value": 0.8, "source": "FDA labeling: rapidly and completely absorbed"},
+      "ka_per_h": {"value": 1.5, "source": "Illustrative absorption rate"},
+      "reference_note": "Renal and gastrointestinal effects are not modeled."
+    },
+    "warnings": ["NSAIDs carry gastrointestinal, renal and cardiovascular risks that depend on many factors not captured here."],
+    "evidence_refs": ["fda-ibuprofen-label", "pharmgkb-cyp2c9"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative one-compartment PK; not suitable for dosing."
+  },
+  {
+    "id": "tacrolimus",
+    "name": "Tacrolimus",
+    "generic_name": "tacrolimus",
+    "drug_class": "Calcineurin inhibitor immunosuppressant",
+    "atc_code": "L04AD02",
+    "mechanism_summary": "Binds FKBP12 and inhibits calcineurin, reducing T-cell activation. Metabolized primarily by CYP3A4 and CYP3A5; CYP3A5 expressers clear tacrolimus more rapidly. Narrow therapeutic index.",
+    "enzyme_pathways": [
+      {"gene": "CYP3A5", "role": "metabolism (expressers)", "contribution": 0.5, "evidence": "CPIC CYP3A5 guideline"},
+      {"gene": "CYP3A4", "role": "metabolism", "contribution": 0.5, "evidence": "FDA labeling"}
+    ],
+    "transporter_pathways": [],
+    "half_life_hours": 12.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.01,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 12.0, "low": 8.0, "high": 24.0, "source": "FDA tacrolimus labeling: highly variable half-life"},
+      "v_per_kg": {"value": 1.4, "source": "FDA labeling: volume of distribution based on plasma approximately 1.4 L/kg"},
+      "bioavailability": {"value": 0.25, "source": "FDA labeling: variable oral bioavailability"},
+      "ka_per_h": {"value": 0.8, "source": "Illustrative absorption rate"},
+      "reference_note": "Therapeutic drug monitoring is essential in real care; this model cannot replace it."
+    },
+    "warnings": [
+      "Tacrolimus has a narrow therapeutic index and serious toxicity; dosing requires transplant-specialist management and therapeutic drug monitoring.",
+      "This simulation does not calculate a dose or predict rejection or toxicity."
+    ],
+    "evidence_refs": ["cpic-tacrolimus-cyp3a5", "fda-tacrolimus-label"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative PK-only model with high between-person variability. Not for clinical use."
+  },
+  {
+    "id": "levothyroxine",
+    "name": "Levothyroxine",
+    "generic_name": "levothyroxine sodium",
+    "drug_class": "Thyroid hormone replacement",
+    "atc_code": "H03AA01",
+    "mechanism_summary": "Synthetic thyroxine (T4) replaced for hypothyroidism. Absorption and dose requirements are influenced by many factors, but the pharmacokinetics are not primarily CYP-mediated.",
+    "enzyme_pathways": [],
+    "transporter_pathways": [],
+    "half_life_hours": 168.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.0,
+    "simulation_model": "not_supported",
+    "simulation_config": {},
+    "warnings": ["Thyroid hormone dose adjustment requires TSH monitoring and clinician supervision."],
+    "evidence_refs": ["fda-levothyroxine-label"],
+    "is_simulation_eligible": false,
+    "parameter_note": "No simulation is offered: a simplified PK model would not meaningfully inform thyroid hormone management."
+  },
+  {
+    "id": "albuterol",
+    "name": "Albuterol inhaler",
+    "generic_name": "albuterol sulfate",
+    "drug_class": "Short-acting beta-2 agonist",
+    "atc_code": "R03AC02",
+    "mechanism_summary": "Beta-2 adrenergic agonist causing bronchial smooth-muscle relaxation. Inhaled route and local lung deposition dominate; a systemic oral model is not appropriate.",
+    "enzyme_pathways": [],
+    "transporter_pathways": [],
+    "half_life_hours": 5.0,
+    "route_options": ["inhalation"],
+    "renal_fraction": 0.4,
+    "simulation_model": "not_supported",
+    "simulation_config": {},
+    "warnings": ["Rescue inhaler use patterns and asthma control should be reviewed with a clinician."],
+    "evidence_refs": ["fda-albuterol-label"],
+    "is_simulation_eligible": false,
+    "parameter_note": "Inhaled pulmonary deposition is not represented by the oral model, so no simulation is offered."
+  },
+  {
+    "id": "cholecalciferol",
+    "name": "Vitamin D3 (cholecalciferol)",
+    "generic_name": "cholecalciferol",
+    "drug_class": "Vitamin D supplement",
+    "atc_code": "A11CC05",
+    "mechanism_summary": "A precursor to calcidiol and calcitriol; supports calcium and phosphate homeostasis. Supplement decisions depend on measured 25-hydroxyvitamin D and clinical context.",
+    "enzyme_pathways": [],
+    "transporter_pathways": [],
+    "half_life_hours": null,
+    "route_options": ["oral"],
+    "renal_fraction": 0.0,
+    "simulation_model": "not_supported",
+    "simulation_config": {},
+    "warnings": ["Supplement use should be based on measured vitamin D status and professional guidance."],
+    "evidence_refs": ["ods-vitamin-d"],
+    "is_simulation_eligible": false,
+    "parameter_note": "No PK simulation: the relevant biology is the slow vitamin D metabolite pool, not a simple plasma half-life."
+  },
+  {
+    "id": "fluconazole",
+    "name": "Fluconazole",
+    "generic_name": "fluconazole",
+    "drug_class": "Azole antifungal",
+    "atc_code": "J02AC01",
+    "mechanism_summary": "Inhibits fungal lanosterol 14-alpha-demethylase. It is also a clinically important inhibitor of CYP2C9, CYP2C19 and CYP3A4, and is renally eliminated.",
+    "enzyme_pathways": [],
+    "transporter_pathways": [],
+    "half_life_hours": 30.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.8,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 30.0, "low": 25.0, "high": 35.0, "source": "FDA fluconazole labeling"},
+      "v_per_kg": {"value": 0.7, "source": "FDA labeling: volume of distribution approximates total body water"},
+      "bioavailability": {"value": 0.9, "source": "FDA labeling: high oral bioavailability"},
+      "ka_per_h": {"value": 1.0, "source": "Illustrative absorption rate"},
+      "reference_note": "Simulation of fluconazole exposure only; interaction effects on other drugs are flagged separately."
+    },
+    "warnings": ["Potent CYP inhibitor; interacting medication regimens require pharmacist or clinician review."],
+    "evidence_refs": ["fda-fluconazole-label", "fda-ddi-guidance"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative PK; not for dosing. Interaction warnings are curated separately from simulated exposure."
+  },
+  {
+    "id": "paroxetine",
+    "name": "Paroxetine",
+    "generic_name": "paroxetine hydrochloride",
+    "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
+    "atc_code": "N06AB05",
+    "mechanism_summary": "Inhibits serotonin reuptake. Paroxetine is a potent CYP2D6 inhibitor and can increase exposure to CYP2D6 substrates such as metoprolol.",
+    "enzyme_pathways": [{"gene": "CYP2D6", "role": "inhibition", "contribution": 0.0, "evidence": "FDA labeling"}],
+    "transporter_pathways": [],
+    "half_life_hours": 21.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.02,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 21.0, "low": 15.0, "high": 30.0, "source": "FDA paroxetine labeling"},
+      "v_per_kg": {"value": 3.0, "source": "Published PK summaries; illustrative apparent volume"},
+      "bioavailability": {"value": 0.5, "source": "FDA labeling: oral bioavailability approximately 50%"},
+      "ka_per_h": {"value": 1.0, "source": "Illustrative absorption rate"},
+      "reference_note": "Exposure simulation only; serotonergic and psychiatric effects are outside the model."
+    },
+    "warnings": ["Potent CYP2D6 inhibitor; combination with metoprolol or other CYP2D6 substrates may require clinical review."],
+    "evidence_refs": ["fda-paroxetine-label", "fda-ddi-guidance"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative PK; not for dosing."
+  },
+  {
+    "id": "clarithromycin",
+    "name": "Clarithromycin",
+    "generic_name": "clarithromycin",
+    "drug_class": "Macrolide antibiotic",
+    "atc_code": "J01FA09",
+    "mechanism_summary": "Inhibits bacterial protein synthesis. Clarithromycin is a strong CYP3A4 inhibitor and can markedly increase exposure to CYP3A4 substrates such as simvastatin.",
+    "enzyme_pathways": [{"gene": "CYP3A4", "role": "inhibition", "contribution": 0.0, "evidence": "FDA labeling"}],
+    "transporter_pathways": [],
+    "half_life_hours": 4.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.3,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 4.0, "low": 3.0, "high": 5.0, "source": "FDA clarithromycin labeling"},
+      "v_per_kg": {"value": 3.0, "source": "Published PK summaries; illustrative apparent volume"},
+      "bioavailability": {"value": 0.55, "source": "FDA labeling: oral bioavailability approximately 50–55%"},
+      "ka_per_h": {"value": 1.0, "source": "Illustrative absorption rate"},
+      "reference_note": "Exposure simulation only; antimicrobial spectrum and infection outcomes are out of scope."
+    },
+    "warnings": ["Strong CYP3A4 inhibitor; some co-administrations, including simvastatin, are contraindicated."],
+    "evidence_refs": ["fda-clarithromycin-label", "fda-ddi-guidance", "fda-simvastatin-label"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative PK; not for dosing."
+  },
+  {
+    "id": "rifampin",
+    "name": "Rifampin",
+    "generic_name": "rifampin",
+    "drug_class": "Rifamycin antibiotic",
+    "atc_code": "J04AB02",
+    "mechanism_summary": "Inhibits bacterial RNA polymerase and is a potent inducer of CYP3A4, CYP2C9 and other enzymes and transporters, reducing exposure to many co-administered drugs.",
+    "enzyme_pathways": [{"gene": "CYP3A4", "role": "induction", "contribution": 0.0, "evidence": "FDA labeling"}],
+    "transporter_pathways": [],
+    "half_life_hours": 3.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.1,
+    "simulation_model": "oral_pk",
+    "simulation_config": {
+      "half_life_hours": {"value": 3.0, "low": 2.0, "high": 5.0, "source": "FDA rifampin labeling"},
+      "v_per_kg": {"value": 1.0, "source": "Published PK summaries; illustrative apparent volume"},
+      "bioavailability": {"value": 0.9, "source": "FDA labeling: well absorbed"},
+      "ka_per_h": {"value": 1.0, "source": "Illustrative absorption rate"},
+      "reference_note": "Enzyme induction develops over days and persists after discontinuation; the simplified model does not simulate induction time course."
+    },
+    "warnings": ["Potent enzyme inducer; multiple drug interactions are possible and require pharmacist review."],
+    "evidence_refs": ["fda-rifampin-label", "fda-ddi-guidance"],
+    "is_simulation_eligible": true,
+    "parameter_note": "Illustrative PK; induction time course not modeled."
+  },
+  {
+    "id": "amoxicillin",
+    "name": "Amoxicillin",
+    "generic_name": "amoxicillin",
+    "drug_class": "Aminopenicillin antibiotic",
+    "atc_code": "J01CA04",
+    "mechanism_summary": "Beta-lactam antibiotic that inhibits bacterial cell-wall synthesis. Renal elimination predominates.",
+    "enzyme_pathways": [],
+    "transporter_pathways": [],
+    "half_life_hours": 1.3,
+    "route_options": ["oral"],
+    "renal_fraction": 0.7,
+    "simulation_model": "not_supported",
+    "simulation_config": {},
+    "warnings": ["Penicillin allergy history requires clinical review before any beta-lactam exposure."],
+    "evidence_refs": ["fda-amoxicillin-label"],
+    "is_simulation_eligible": false,
+    "parameter_note": "No simulation: infection-specific treatment decisions are outside POLIS."
+  },
+  {
+    "id": "azathioprine",
+    "name": "Azathioprine",
+    "generic_name": "azathioprine",
+    "drug_class": "Thiopurine immunosuppressant",
+    "atc_code": "L04AX01",
+    "mechanism_summary": "A thiopurine prodrug metabolized to thioguanine nucleotides that incorporate into DNA. TPMT and NUDT15 activity strongly affect active metabolite formation and myelosuppression risk.",
+    "enzyme_pathways": [
+      {"gene": "TPMT", "role": "inactivation of thiopurine metabolites", "contribution": 0.0, "evidence": "CPIC thiopurine guideline"},
+      {"gene": "NUDT15", "role": "inactivation of thioguanine nucleotides", "contribution": 0.0, "evidence": "CPIC thiopurine guideline"}
+    ],
+    "transporter_pathways": [],
+    "half_life_hours": 2.0,
+    "route_options": ["oral"],
+    "renal_fraction": 0.1,
+    "simulation_model": "not_supported",
+    "simulation_config": {},
+    "warnings": [
+      "Thiopurine therapy can cause severe myelosuppression; TPMT/NUDT15 genotype and blood-count monitoring are used in specialist care.",
+      "POLIS does not simulate thiopurine toxicity or recommend dose changes."
+    ],
+    "evidence_refs": ["cpic-thiopurines", "fda-azathioprine-label"],
+    "is_simulation_eligible": false,
+    "parameter_note": "Simulation intentionally unavailable: active thioguanine nucleotide kinetics and toxicity require validated clinical workflows."
+  },
+  {
+    "id": "fluorouracil",
+    "name": "Fluorouracil",
+    "generic_name": "fluorouracil",
+    "drug_class": "Antimetabolite chemotherapy",
+    "atc_code": "L01BC02",
+    "mechanism_summary": "A pyrimidine antimetabolite. Dihydropyrimidine dehydrogenase (DPYD) is the rate-limiting enzyme for catabolism; reduced DPD activity increases exposure and severe toxicity risk.",
+    "enzyme_pathways": [{"gene": "DPYD", "role": "catabolic clearance", "contribution": 0.9, "evidence": "CPIC DPYD guideline"}],
+    "transporter_pathways": [],
+    "half_life_hours": 0.3,
+    "route_options": ["intravenous"],
+    "renal_fraction": 0.05,
+    "simulation_model": "not_supported",
+    "simulation_config": {},
+    "warnings": [
+      "Fluoropyrimidine chemotherapy can be fatal in patients with complete DPD deficiency.",
+      "Dose decisions require oncology-specialist and pharmacist management; POLIS offers no simulation or dose calculation."
+    ],
+    "evidence_refs": ["cpic-dpyd-2018", "fda-fluorouracil-label"],
+    "is_simulation_eligible": false,
+    "parameter_note": "Simulation intentionally unavailable for this high-risk oncology context."
+  },
+  {
+    "id": "irinotecan",
+    "name": "Irinotecan",
+    "generic_name": "irinotecan hydrochloride",
+    "drug_class": "Topoisomerase I inhibitor chemotherapy",
+    "atc_code": "L01XX19",
+    "mechanism_summary": "A prodrug converted to SN-38, a potent topoisomerase I inhibitor. UGT1A1 glucuronidates SN-38; reduced UGT1A1 activity is associated with increased SN-38 exposure and neutropenia risk.",
+    "enzyme_pathways": [{"gene": "UGT1A1", "role": "SN-38 glucuronidation", "contribution": 0.6, "evidence": "CPIC UGT1A1 guideline"}],
+    "transporter_pathways": [],
+    "half_life_hours": 6.0,
+    "route_options": ["intravenous"],
+    "renal_fraction": 0.1,
+    "simulation_model": "not_supported",
+    "simulation_config": {},
+    "warnings": [
+      "Irinotecan toxicity and dose decisions require oncology-specialist management.",
+      "POLIS does not simulate SN-38 exposure or recommend dose changes."
+    ],
+    "evidence_refs": ["cpic-ugt1a1-atazanavir", "fda-irinotecan-label"],
+    "is_simulation_eligible": false,
+    "parameter_note": "Simulation intentionally unavailable for this high-risk oncology context."
+  }
+]

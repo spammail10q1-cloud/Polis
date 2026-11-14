@@ -1,0 +1,13 @@
+node_modules
+.next
+__pycache__
+*.pyc
+*.db
+*.db-*
+.env
+.env.*
+!.env.example
+tests
+.pytest_cache
+.venv
+npm-debug.log

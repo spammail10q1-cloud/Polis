@@ -1,0 +1,862 @@
+[
+  {
+    "id": "cpic-clopidogrel-2022",
+    "title": "CPIC Guideline for CYP2C19 Genotype and Clopidogrel Therapy: 2022 Update",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/guidelines/guideline-for-clopidogrel-and-cyp2c19/",
+    "published_at": "2022",
+    "version": "2022 update",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "CYP2C19 genotype affects conversion of clopidogrel to its active metabolite. In poor and intermediate metabolizers, alternative antiplatelet therapy is preferred when not contraindicated.",
+    "content": "Clopidogrel is a prodrug that requires CYP2C19-mediated bioactivation. The 2022 CPIC guideline recommends that, for patients with an indication for clopidogrel, CYP2C19 poor or intermediate metabolizer status should prompt consideration of an alternative P2Y12 inhibitor (such as prasugrel or ticagrelor) if not contraindicated. Clinical indication, bleeding risk, stent type, and other factors remain part of the decision. Genotype is not the only determinant of response. CPIC guidelines are designed to help clinicians translate genotype into prescribing decisions; they are not a substitute for clinical judgment.",
+    "tags": [
+      "CYP2C19",
+      "clopidogrel",
+      "pharmacogenomics",
+      "antiplatelet",
+      "prodrug",
+      "CPIC"
+    ]
+  },
+  {
+    "id": "fda-clopidogrel-cyp2c19",
+    "title": "Clopidogrel prescribing information: boxed warning and CYP2C19",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=clopidogrel",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory safety communication",
+    "source_type": "drug_label",
+    "summary": "CYP2C19 poor metabolizers form less active clopidogrel metabolite and may have diminished antiplatelet response. Omeprazole co-administration can also reduce activation.",
+    "content": "The FDA boxed warning for clopidogrel describes reduced effectiveness in patients who are CYP2C19 poor metabolizers because they form less of the active metabolite. The warning notes that tests are available to identify CYP2C19 genotype and that alternative treatment may be considered. The clopidogrel label also warns that concomitant use of omeprazole or esomeprazole reduces conversion of clopidogrel to its active metabolite and should be avoided. These are prescribing considerations for a qualified clinician, not a basis for a patient to change antiplatelet therapy independently.",
+    "tags": [
+      "CYP2C19",
+      "clopidogrel",
+      "omeprazole",
+      "boxed warning",
+      "drug interaction",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-omeprazole-label",
+    "title": "Omeprazole prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=omeprazole",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Omeprazole is metabolized by CYP2C19 and CYP3A4 and inhibits CYP2C19. Concomitant clopidogrel use can reduce active metabolite formation.",
+    "content": "Omeprazole is a proton pump inhibitor indicated for acid-related disorders. Its labeling describes metabolism primarily by CYP2C19 and secondarily by CYP3A4, with potential for clinically relevant CYP2C19 inhibition. The label warns that concomitant use with clopidogrel should be avoided because omeprazole decreases conversion of clopidogrel to its active metabolite and reduces its antiplatelet effect. Other interactions and formulation-specific absorption differences are described in the full label. The label should be consulted for current, complete information.",
+    "tags": [
+      "omeprazole",
+      "CYP2C19",
+      "CYP3A4",
+      "clopidogrel",
+      "drug interaction",
+      "proton pump inhibitor",
+      "FDA"
+    ]
+  },
+  {
+    "id": "cpic-cyp2c19-ppi",
+    "title": "CPIC gene-drug information: CYP2C19 and proton pump inhibitors",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/genes-drugs/",
+    "published_at": "Accessed 2026",
+    "version": "Gene-drug index",
+    "evidence_level": "Clinical pharmacogenomic guideline resource",
+    "source_type": "guideline",
+    "summary": "CYP2C19 genotype influences proton-pump inhibitor exposure; actionability varies by drug and indication. It does not determine diagnosis or replace symptom assessment.",
+    "content": "CYP2C19 is the major enzyme involved in the metabolism of several proton pump inhibitors. CPIC has published gene-drug guidance for CYP2C19 and proton pump inhibitors, with recommendations that depend on the specific medicine and clinical context. Genotype can influence plasma concentrations and acid suppression, but evidence for hard clinical outcomes differs between drugs and indications. POLIS uses phenotype only to explain mechanistic relevance and never converts it into a dose recommendation.",
+    "tags": [
+      "CYP2C19",
+      "omeprazole",
+      "proton pump inhibitor",
+      "pharmacogenomics",
+      "CPIC"
+    ]
+  },
+  {
+    "id": "fda-metoprolol-label",
+    "title": "Metoprolol prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=metoprolol",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Metoprolol is extensively metabolized, primarily by CYP2D6. Poor metabolizers may have higher exposure. Formulation and clinical status affect response.",
+    "content": "Metoprolol is a beta-1 selective adrenergic blocker. Labeling describes extensive first-pass hepatic metabolism with CYP2D6 as a major pathway. In CYP2D6 poor metabolizers, metoprolol plasma concentrations may be higher, and clinicians may consider this when assessing response or adverse effects such as bradycardia. The label and clinical response, not a simulation alone, guide care. Immediate- and extended-release formulations have different absorption characteristics. Beta-blockers should not be stopped abruptly without clinician guidance.",
+    "tags": [
+      "metoprolol",
+      "CYP2D6",
+      "beta blocker",
+      "drug metabolism",
+      "FDA",
+      "pharmacogenomics"
+    ]
+  },
+  {
+    "id": "pharmgkb-cyp2d6",
+    "title": "PharmGKB gene resource: CYP2D6",
+    "organization": "PharmGKB",
+    "url": "https://www.pharmgkb.org/gene/PA128",
+    "published_at": "Accessed 2026",
+    "version": "Curated gene resource",
+    "evidence_level": "Curated pharmacogenomic knowledge base",
+    "source_type": "database",
+    "summary": "CYP2D6 is highly polymorphic, metabolizes many drugs, and is subject to copy-number variation and structural variants. Phenotype prediction requires a validated allele caller.",
+    "content": "CYP2D6 encodes a cytochrome P450 enzyme involved in the metabolism of many medications, including beta-blockers, some antidepressants, opioids, and antiemetics. The gene is highly polymorphic and is affected by single-nucleotide variants, insertions/deletions, gene duplications, hybrid genes, and structural variation. Accurate diplotype and phenotype assignment requires a validated laboratory assay and interpretation system that accounts for copy number and phasing. A single variant or incomplete panel is insufficient to assign a clinical phenotype. Activity scores are genotype interpretation tools, not direct measures of enzyme activity.",
+    "tags": [
+      "CYP2D6",
+      "pharmacogenomics",
+      "copy number",
+      "structural variants",
+      "diplotype",
+      "PharmGKB"
+    ]
+  },
+  {
+    "id": "cpic-gene-drug-index",
+    "title": "CPIC genes and drugs index",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/genes-drugs/",
+    "published_at": "Accessed 2026",
+    "version": "Living resource",
+    "evidence_level": "Clinical pharmacogenomic guideline index",
+    "source_type": "guideline",
+    "summary": "CPIC publishes peer-reviewed gene-drug guidelines and standardized phenotype terms. Guideline availability does not mean every drug has actionable genotype guidance.",
+    "content": "CPIC maintains peer-reviewed guidelines that translate pharmacogenomic test results into prescribing considerations. Each gene-drug pair has a level of evidence and specific caveats. Standardized phenotype terms include poor, intermediate, normal, rapid, and ultrarapid metabolizer where appropriate. Absence of a CPIC guideline for a gene-drug pair means that genotype-based prescribing guidance is not established, not that genotype is irrelevant. Guidelines are updated over time; users should consult the current version.",
+    "tags": [
+      "CPIC",
+      "pharmacogenomics",
+      "guidelines",
+      "phenotype",
+      "evidence"
+    ]
+  },
+  {
+    "id": "cpic-slco1b1-simvastatin",
+    "title": "CPIC Guideline for SLCO1B1 Genotype and Simvastatin Therapy",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/guidelines/guideline-for-simvastatin-and-slco1b1/",
+    "published_at": "2014",
+    "version": "2014 guideline",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "Decreased-function SLCO1B1 variants increase simvastatin exposure and myopathy risk. CPIC recommends lower doses or alternative statins for affected patients.",
+    "content": "SLCO1B1 encodes the hepatic OATP1B1 transporter, which mediates uptake of simvastatin into hepatocytes. The CPIC guideline states that decreased-function SLCO1B1 genotypes are associated with increased simvastatin acid exposure and a higher risk of simvastatin-associated myopathy. For patients with decreased or poor function, CPIC suggests prescribing a lower dose or an alternative statin, with consideration of the clinical context. The guideline does not apply identically to all statins; atorvastatin and rosuvastatin have different transport and metabolism profiles. POLIS describes transporter relevance but does not calculate a simvastatin dose.",
+    "tags": [
+      "SLCO1B1",
+      "simvastatin",
+      "statin",
+      "myopathy",
+      "OATP1B1",
+      "CPIC"
+    ]
+  },
+  {
+    "id": "fda-simvastatin-label",
+    "title": "Simvastatin prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Simvastatin is a CYP3A4 substrate with low oral bioavailability. Strong CYP3A4 inhibitors, including clarithromycin, are contraindicated.",
+    "content": "Simvastatin is an HMG-CoA reductase inhibitor. Its labeling highlights low oral bioavailability, extensive hepatic metabolism, and CYP3A4-mediated metabolism. Concomitant use with strong CYP3A4 inhibitors such as clarithromycin, itraconazole, or protease inhibitors is contraindicated because of increased risk of myopathy and rhabdomyolysis. SLCO1B1 genotype also affects exposure. Symptoms of muscle pain, weakness, or dark urine require prompt clinical assessment. This information is for understanding mechanisms, not for self-management.",
+    "tags": [
+      "simvastatin",
+      "CYP3A4",
+      "clarithromycin",
+      "myopathy",
+      "statin",
+      "FDA"
+    ]
+  },
+  {
+    "id": "pharmgkb-slco1b1",
+    "title": "PharmGKB gene resource: SLCO1B1",
+    "organization": "PharmGKB",
+    "url": "https://www.pharmgkb.org/gene/PA134865839",
+    "published_at": "Accessed 2026",
+    "version": "Curated gene resource",
+    "evidence_level": "Curated pharmacogenomic knowledge base",
+    "source_type": "database",
+    "summary": "SLCO1B1 encodes OATP1B1, a hepatic uptake transporter affecting statin exposure. The common rs4149056 variant is associated with reduced function.",
+    "content": "SLCO1B1 encodes the organic anion transporting polypeptide 1B1 (OATP1B1), which mediates sodium-independent uptake of many drugs and endogenous compounds into hepatocytes. The common decreased-function variant rs4149056 (c.521T>C, often denoted *5) is associated with increased systemic exposure to simvastatin and with simvastatin-associated myopathy. Effects on other statins are smaller or less certain. Transporter genotype is one factor among many, including dose, interacting drugs, age, and kidney function.",
+    "tags": [
+      "SLCO1B1",
+      "OATP1B1",
+      "transporter",
+      "statin",
+      "rs4149056",
+      "pharmacogenomics"
+    ]
+  },
+  {
+    "id": "cpic-warfarin-2017",
+    "title": "CPIC Guideline for Pharmacogenetics-Guided Warfarin Dosing: 2017 Update",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/",
+    "published_at": "2017",
+    "version": "2017 update",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "CYP2C9 and VKORC1 genotypes influence warfarin maintenance dose requirements and are used in genotype-guided dosing algorithms alongside clinical factors.",
+    "content": "Warfarin is a vitamin K antagonist with a narrow therapeutic index. CYP2C9 genotype affects metabolism of the more potent S-warfarin enantiomer, and VKORC1 genotype affects sensitivity to vitamin K antagonism. The CPIC 2017 update provides genotype-guided dosing algorithms that also include age, height, weight, race, and interacting medications. These algorithms are decision-support tools for clinicians, must be combined with INR monitoring, and are not directly transferable to a simplified simulation. POLIS does not calculate a warfarin dose or predict INR.",
+    "tags": [
+      "warfarin",
+      "CYP2C9",
+      "VKORC1",
+      "INR",
+      "anticoagulation",
+      "CPIC",
+      "dosing algorithm"
+    ]
+  },
+  {
+    "id": "fda-warfarin-label",
+    "title": "Warfarin prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=warfarin",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Warfarin has a narrow therapeutic index and numerous interactions. CYP2C9 and VKORC1 genotype information is included in its labeling.",
+    "content": "Warfarin sodium is an anticoagulant with a boxed warning for bleeding risk. Its labeling describes a mean half-life of about 40 hours, high bioavailability, and extensive hepatic metabolism. S-warfarin is metabolized primarily by CYP2C9. The label discusses CYP2C9 and VKORC1 genotype and notes that genotype information may support initial dosing in some patients, but INR monitoring remains essential. Many drugs, dietary changes, and illnesses alter anticoagulant effect. Patients should not change warfarin use based on an app.",
+    "tags": [
+      "warfarin",
+      "bleeding",
+      "CYP2C9",
+      "VKORC1",
+      "INR",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-atorvastatin-label",
+    "title": "Atorvastatin prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=atorvastatin",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Atorvastatin is metabolized by CYP3A4 and has active metabolites. Interacting CYP3A4 inhibitors can increase exposure.",
+    "content": "Atorvastatin is an HMG-CoA reductase inhibitor used to lower LDL cholesterol and cardiovascular risk. The labeling describes metabolism by CYP3A4 and active ortho- and para-hydroxylated metabolites, with an elimination half-life of approximately 14 hours for atorvastatin and longer for inhibitory metabolites. Strong CYP3A4 inhibitors can increase exposure and myopathy risk. The full label contains dose-specific and interaction information that must be interpreted by a clinician or pharmacist.",
+    "tags": [
+      "atorvastatin",
+      "CYP3A4",
+      "statin",
+      "drug interaction",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-ibuprofen-label",
+    "title": "Ibuprofen prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ibuprofen",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Ibuprofen is a nonsteroidal anti-inflammatory drug metabolized mainly by CYP2C9, with gastrointestinal, renal, and cardiovascular risks.",
+    "content": "Ibuprofen is a nonsteroidal anti-inflammatory drug that inhibits cyclooxygenase and reduces prostaglandin synthesis. It is rapidly absorbed and extensively metabolized, primarily by CYP2C9. NSAID labeling includes warnings about gastrointestinal bleeding, kidney injury, cardiovascular risk, and interactions with anticoagulants and antihypertensives. These risks depend on dose, duration, age, kidney function, and comorbidity and cannot be inferred from a single genotype result.",
+    "tags": [
+      "ibuprofen",
+      "NSAID",
+      "CYP2C9",
+      "kidney",
+      "gastrointestinal",
+      "FDA"
+    ]
+  },
+  {
+    "id": "pharmgkb-cyp2c9",
+    "title": "PharmGKB gene resource: CYP2C9",
+    "organization": "PharmGKB",
+    "url": "https://www.pharmgkb.org/gene/PA126",
+    "published_at": "Accessed 2026",
+    "version": "Curated gene resource",
+    "evidence_level": "Curated pharmacogenomic knowledge base",
+    "source_type": "database",
+    "summary": "CYP2C9 metabolizes warfarin, some NSAIDs, and other drugs. The *2 and *3 alleles reduce enzyme activity.",
+    "content": "CYP2C9 encodes a cytochrome P450 enzyme that metabolizes a substantial fraction of clinically used drugs, including S-warfarin, phenytoin, and some NSAIDs. Common reduced-function alleles include *2 (rs1799853) and *3 (rs1057910); frequencies vary substantially across ancestral populations. Genotype interpretation requires an appropriate assay, and population ancestry is a poor proxy for individual genotype. Drug-specific CPIC guidelines should be consulted for actionable pairs.",
+    "tags": [
+      "CYP2C9",
+      "warfarin",
+      "NSAID",
+      "pharmacogenomics",
+      "PharmGKB"
+    ]
+  },
+  {
+    "id": "cpic-tacrolimus-cyp3a5",
+    "title": "CPIC Guideline for CYP3A5 Genotype and Tacrolimus Therapy",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/guidelines/guideline-for-tacrolimus-and-cyp3a5/",
+    "published_at": "2015",
+    "version": "CPIC guideline",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "CYP3A5 expressers require higher tacrolimus starting doses to reach target exposure; therapeutic drug monitoring remains essential.",
+    "content": "Tacrolimus is a calcineurin inhibitor with a narrow therapeutic index used after transplantation. CYP3A5 expressers metabolize tacrolimus more rapidly and, per CPIC guidance, generally require a higher starting dose to achieve target trough concentrations, with therapeutic drug monitoring. CYP3A4 and clinical factors also matter. POLIS's simplified simulation may illustrate directionality but cannot calculate a tacrolimus dose or predict rejection, nephrotoxicity, or other outcomes.",
+    "tags": [
+      "tacrolimus",
+      "CYP3A5",
+      "transplant",
+      "therapeutic drug monitoring",
+      "CPIC"
+    ]
+  },
+  {
+    "id": "fda-tacrolimus-label",
+    "title": "Tacrolimus prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tacrolimus",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Tacrolimus has a narrow therapeutic index, variable PK, and serious risks requiring specialist management and drug monitoring.",
+    "content": "Tacrolimus prescribing information includes a boxed warning regarding increased susceptibility to infection and development of lymphoma. The drug has highly variable oral bioavailability and a narrow therapeutic index. CYP3A4 and CYP3A5 are involved in metabolism, and many drugs alter tacrolimus concentrations. Therapeutic drug monitoring is standard of care. Any concerns about tacrolimus require transplant-specialist review.",
+    "tags": [
+      "tacrolimus",
+      "CYP3A4",
+      "CYP3A5",
+      "transplant",
+      "drug monitoring",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-levothyroxine-label",
+    "title": "Levothyroxine prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levothyroxine",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Levothyroxine is thyroid hormone replacement; dose adjustment requires thyroid function testing and clinician oversight.",
+    "content": "Levothyroxine is used to replace thyroid hormone in hypothyroidism. Its absorption is affected by food, calcium, iron, and other medicines. Dose requirements depend on age, weight, cardiac status, pregnancy, and the cause of hypothyroidism. TSH is used for monitoring. POLIS does not simulate levothyroxine therapy because a simplified PK model would not meaningfully inform clinical management.",
+    "tags": [
+      "levothyroxine",
+      "thyroid",
+      "TSH",
+      "hypothyroidism",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-albuterol-label",
+    "title": "Albuterol sulfate inhalation prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=albuterol",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Inhaled albuterol is a short-acting bronchodilator; Overuse can indicate poorly controlled asthma and warrants clinical review.",
+    "content": "Albuterol sulfate is a short-acting beta-2 adrenergic agonist used for bronchospasm. Inhaled delivery produces local pulmonary effects that are not represented by a systemic oral PK model. Increasing rescue inhaler use, nocturnal symptoms, or poor exercise tolerance may indicate worsening asthma control and should be discussed with a clinician. POLIS displays recorded medication use as context but does not assess asthma control or change therapy.",
+    "tags": [
+      "albuterol",
+      "asthma",
+      "inhaler",
+      "beta agonist",
+      "FDA"
+    ]
+  },
+  {
+    "id": "ods-vitamin-d",
+    "title": "Vitamin D fact sheet for health professionals",
+    "organization": "NIH Office of Dietary Supplements",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+    "published_at": "Accessed 2026",
+    "version": "Living fact sheet",
+    "evidence_level": "Government reference resource",
+    "source_type": "reference",
+    "summary": "Vitamin D status is assessed with serum 25-hydroxyvitamin D. Supplement needs depend on measured status, age, and clinical context.",
+    "content": "Vitamin D is a fat-soluble nutrient and hormone precursor. Serum 25-hydroxyvitamin D is the accepted marker of vitamin D status. The relationship between intake, sunlight exposure, serum concentration, and clinical outcomes is complex. Supplement decisions should consider measured status and clinical guidance. A simplified plasma half-life simulation is not appropriate for this biology.",
+    "tags": [
+      "vitamin D",
+      "cholecalciferol",
+      "nutrition",
+      "25-hydroxyvitamin D"
+    ]
+  },
+  {
+    "id": "fda-fluconazole-label",
+    "title": "Fluconazole prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fluconazole",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Fluconazole is renally eliminated and inhibits CYP2C9, CYP2C19, and CYP3A4, causing many clinically important interactions.",
+    "content": "Fluconazole is an azole antifungal with high oral bioavailability and predominantly renal elimination. It is a clinically important inhibitor of CYP2C9, CYP2C19, and CYP3A4. Its labeling describes interactions with warfarin, sulfonylureas, some statins, immunosuppressants, and other drugs. Dose adjustment in kidney impairment and interaction management require professional review.",
+    "tags": [
+      "fluconazole",
+      "CYP2C9",
+      "CYP2C19",
+      "CYP3A4",
+      "drug interaction",
+      "renal",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-paroxetine-label",
+    "title": "Paroxetine prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=paroxetine",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Paroxetine is a potent CYP2D6 inhibitor and can increase exposure to CYP2D6 substrates such as metoprolol.",
+    "content": "Paroxetine is a selective serotonin reuptake inhibitor. Its labeling identifies it as a potent inhibitor of CYP2D6, with the potential to increase concentrations of drugs metabolized by this enzyme. Concomitant use with metoprolol may increase metoprolol exposure and bradycardia risk. The full label contains boxed warnings related to psychiatric effects and other safety information. POLIS flags the interaction for professional review and does not recommend dosage changes.",
+    "tags": [
+      "paroxetine",
+      "CYP2D6",
+      "metoprolol",
+      "SSRI",
+      "drug interaction",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-clarithromycin-label",
+    "title": "Clarithromycin prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=clarithromycin",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Clarithromycin is a strong CYP3A4 inhibitor; co-administration with simvastatin is contraindicated due to myopathy risk.",
+    "content": "Clarithromycin is a macrolide antibiotic and a strong inhibitor of CYP3A4. Its labeling lists contraindicated and potentially significant interactions, including simvastatin, certain antipsychotics, and other CYP3A4 substrates. Concomitant simvastatin use is contraindicated because of increased risk of myopathy and rhabdomyolysis. Interaction management should be performed by a prescriber or pharmacist before starting the antibiotic.",
+    "tags": [
+      "clarithromycin",
+      "CYP3A4",
+      "simvastatin",
+      "drug interaction",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-rifampin-label",
+    "title": "Rifampin prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rifampin",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Rifampin induces CYP3A4 and other enzymes and transporters, reducing exposure to many co-administered medications.",
+    "content": "Rifampin is a rifamycin antibiotic and a potent inducer of cytochrome P450 enzymes and drug transporters. Its prescribing information lists many interactions in which co-administered drug concentrations fall and effectiveness may be reduced. The induction effect develops over days and can persist after rifampin is stopped. Patients starting or stopping rifampin need a comprehensive medication review by a clinician or pharmacist.",
+    "tags": [
+      "rifampin",
+      "enzyme induction",
+      "CYP3A4",
+      "drug interaction",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-amoxicillin-label",
+    "title": "Amoxicillin prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Amoxicillin is a penicillin antibiotic; history of penicillin allergy requires professional assessment before use.",
+    "content": "Amoxicillin is an aminopenicillin antibiotic. Hypersensitivity reactions, including anaphylaxis, can occur. A reported penicillin allergy should be reviewed by a clinician; not every reported allergy represents a true immediate hypersensitivity reaction, and delabeling requires appropriate assessment. POLIS flags recorded allergies but does not determine whether a medicine is safe for an individual.",
+    "tags": [
+      "amoxicillin",
+      "penicillin",
+      "allergy",
+      "antibiotic",
+      "FDA"
+    ]
+  },
+  {
+    "id": "cpic-thiopurines",
+    "title": "CPIC Guideline for Thiopurine Dosing Based on TPMT and NUDT15 Genotype: 2018 Update",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/guidelines/guideline-for-thiopurines-and-tpmt/",
+    "published_at": "2019",
+    "version": "2018 update",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "TPMT and NUDT15 genotypes affect thiopurine active metabolite levels and myelosuppression risk; dosing guidance exists for specialist care.",
+    "content": "Thiopurines such as azathioprine and mercaptopurine are metabolized by TPMT and NUDT15. Reduced function in either gene increases thioguanine nucleotide exposure and the risk of severe myelosuppression. CPIC provides genotype-based starting-dose recommendations, but treatment remains specialist-led and requires blood-count monitoring. POLIS intentionally does not simulate thiopurine toxicity or offer dose advice.",
+    "tags": [
+      "TPMT",
+      "NUDT15",
+      "azathioprine",
+      "thiopurine",
+      "myelosuppression",
+      "CPIC"
+    ]
+  },
+  {
+    "id": "fda-azathioprine-label",
+    "title": "Azathioprine prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=azathioprine",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Azathioprine can cause severe myelosuppression; TPMT testing and monitoring are part of specialist management.",
+    "content": "Azathioprine is an immunosuppressant used in transplantation, autoimmune disease, and inflammatory bowel disease. Its labeling includes warnings for severe leukopenia, thrombocytopenia, and infection, with TPMT genotyping and blood monitoring used in care. Concomitant allopurinol markedly alters thiopurine metabolism. POLIS displays genetics and medication context but does not simulate or recommend thiopurine therapy.",
+    "tags": [
+      "azathioprine",
+      "TPMT",
+      "myelosuppression",
+      "immunosuppression",
+      "FDA"
+    ]
+  },
+  {
+    "id": "cpic-dpyd-2018",
+    "title": "CPIC Guideline for Dihydropyrimidine Dehydrogenase Genotype and Fluoropyrimidine Dosing: 2017 Update",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/",
+    "published_at": "2018",
+    "version": "2017 update",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "DPYD genotype can reduce DPD activity and increase severe or fatal fluoropyrimidine toxicity. Dose decisions require oncology expertise.",
+    "content": "Dihydropyrimidine dehydrogenase (DPD), encoded by DPYD, is responsible for catabolism of fluoropyrimidines such as fluorouracil and capecitabine. Reduced DPD activity is associated with severe, sometimes fatal, toxicity. CPIC provides genotype-based dosing recommendations for fluoropyrimidines, with additional clinical factors considered by oncology teams. POLIS flags DPYD variants as pharmacogenomically relevant where present but intentionally does not simulate fluoropyrimidine therapy.",
+    "tags": [
+      "DPYD",
+      "fluorouracil",
+      "capecitabine",
+      "chemotherapy",
+      "toxicity",
+      "CPIC"
+    ]
+  },
+  {
+    "id": "fda-fluorouracil-label",
+    "title": "Fluorouracil prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fluorouracil",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Fluorouracil is a toxic antimetabolite; DPD deficiency increases the risk of severe toxicity.",
+    "content": "Fluorouracil is an antimetabolite chemotherapy used in several cancers. The label describes severe toxicities including myelosuppression, mucositis, diarrhea, and cardiac events. DPD deficiency is associated with increased risk. Treatment and any dose adjustment require an oncology specialist. POLIS provides pharmacogenomic context only and does not simulate chemotherapy.",
+    "tags": [
+      "fluorouracil",
+      "DPYD",
+      "chemotherapy",
+      "toxicity",
+      "FDA"
+    ]
+  },
+  {
+    "id": "cpic-ugt1a1-atazanavir",
+    "title": "CPIC Guideline for UGT1A1 Genotype and Atazanavir Therapy",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/guidelines/guideline-for-atazanavir-and-ugt1a1/",
+    "published_at": "2012",
+    "version": "CPIC guideline",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "Reduced UGT1A1 activity is associated with atazanavir-induced hyperbilirubinemia. UGT1A1 also glucuronidates SN-38, the active metabolite of irinotecan.",
+    "content": "UGT1A1 encodes a glucuronosyltransferase involved in bilirubin conjugation. Reduced-function genotypes, including the *28 repeat variant, are associated with Gilbert syndrome and with atazanavir-associated hyperbilirubinemia. Evidence for UGT1A1 and irinotecan toxicity is drug- and context-specific; irinotecan dose decisions require oncology expertise. POLIS displays UGT1A1 phenotype when a validated genotype is available, flags bilirubin context, and does not recommend dose changes.",
+    "tags": [
+      "UGT1A1",
+      "atazanavir",
+      "irinotecan",
+      "bilirubin",
+      "Gilbert",
+      "CPIC"
+    ]
+  },
+  {
+    "id": "fda-irinotecan-label",
+    "title": "Irinotecan prescribing information",
+    "organization": "U.S. Food and Drug Administration / DailyMed",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irinotecan",
+    "published_at": "Accessed 2026",
+    "version": "Current label accessed via DailyMed",
+    "evidence_level": "Regulatory drug labeling",
+    "source_type": "drug_label",
+    "summary": "Irinotecan is a prodrug of SN-38; UGT1A1 variation affects SN-38 glucuronidation and toxicity risk.",
+    "content": "Irinotecan is a topoisomerase I inhibitor used in cancer treatment. It is hydrolyzed to SN-38, which is glucuronidated by UGT1A1. Reduced UGT1A1 activity is associated with increased SN-38 exposure and neutropenia risk. The prescribing information includes warnings for severe diarrhea, neutropenia, and other toxicities. Oncology teams make treatment decisions with clinical and genetic information.",
+    "tags": [
+      "irinotecan",
+      "UGT1A1",
+      "SN-38",
+      "chemotherapy",
+      "neutropenia",
+      "FDA"
+    ]
+  },
+  {
+    "id": "fda-pbpk-guidance",
+    "title": "FDA Guidance: Physiologically Based Pharmacokinetic Analyses: Format and Content",
+    "organization": "U.S. Food and Drug Administration",
+    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/physiologically-based-pharmacokinetic-analyses-format-and-content-guidance-industry",
+    "published_at": "2018 / revised 2020",
+    "version": "Guidance for industry",
+    "evidence_level": "Regulatory guidance",
+    "source_type": "guidance",
+    "summary": "Regulatory use of PBPK requires model qualification, documented assumptions, sensitivity analysis, and context-specific validation.",
+    "content": "FDA guidance describes the format and content expected when physiologically based pharmacokinetic analyses are submitted to support drug development and regulatory decisions. Credibility depends on the intended context of use, model verification, sensitivity analyses, and comparison with observed data. A simple educational one-compartment simulation is not a qualified PBPK model and cannot support individual dosing. POLIS labels its simulation explicitly as experimental and educational.",
+    "tags": [
+      "PBPK",
+      "model validation",
+      "regulatory",
+      "pharmacokinetics",
+      "FDA",
+      "uncertainty"
+    ]
+  },
+  {
+    "id": "pbpk-review-2013",
+    "title": "Basic concepts in physiologically based pharmacokinetic modeling in drug discovery and development",
+    "organization": "CPT: Pharmacometrics & Systems Pharmacology",
+    "url": "https://doi.org/10.1038/psp.2013.41",
+    "published_at": "2013",
+    "version": "Peer-reviewed review",
+    "evidence_level": "Peer-reviewed methodological review",
+    "source_type": "literature",
+    "summary": "PBPK models integrate drug-specific and system-specific parameters. Simpler compartment models sacrifice mechanistic detail and require explicit assumptions.",
+    "content": "Physiologically based pharmacokinetic models represent the body as interconnected tissue compartments with blood flows, volumes, partition coefficients, and clearance processes. They can incorporate enzyme and transporter activity, organ impairment, age, and interactions, but require reliable drug-specific and physiological parameters plus validation against observed data. A one-compartment oral model captures absorption and first-order elimination only; it cannot represent tissue distribution, transporter effects, or pharmacodynamics. POLIS documents this gap and keeps the experimental model separate from clinical modules.",
+    "tags": [
+      "PBPK",
+      "pharmacokinetics",
+      "modeling",
+      "parameters",
+      "uncertainty",
+      "methods"
+    ]
+  },
+  {
+    "id": "kdigo-2024-ckd",
+    "title": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease",
+    "organization": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+    "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+    "published_at": "2024",
+    "version": "2024 guideline",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "eGFR and albuminuria are used to stage and monitor kidney disease. eGFR equations are population estimates and have limitations in individuals.",
+    "content": "KDIGO 2024 guidance emphasizes CKD-EPI creatinine-based eGFR (race-free equations in many settings), cystatin C confirmation where appropriate, and urine albumin-to-creatinine ratio for risk stratification. eGFR is an estimate derived from population equations and can be unreliable at extremes of muscle mass, in acute kidney injury, and in some clinical states. Drug dosing in kidney impairment requires validated drug-specific guidance. A single eGFR value does not constitute a diagnosis.",
+    "tags": [
+      "eGFR",
+      "creatinine",
+      "kidney",
+      "KDIGO",
+      "albuminuria",
+      "renal function"
+    ]
+  },
+  {
+    "id": "acg-liver-chemistries-2017",
+    "title": "ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries",
+    "organization": "American College of Gastroenterology",
+    "url": "https://doi.org/10.1038/ajg.2016.517",
+    "published_at": "2017",
+    "version": "Clinical guideline",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "Abnormal liver chemistries require pattern-based evaluation and context; they do not by themselves establish a diagnosis or drug causation.",
+    "content": "The ACG guideline reviews evaluation of abnormal liver chemistries, including the distinction between hepatocellular, cholestatic, and mixed patterns. A single ALT elevation is not a diagnosis, and reference intervals vary by laboratory. Medication, alcohol, metabolic disease, viral hepatitis, and other causes must be assessed with history and additional testing. POLIS displays liver markers as observations and does not attribute them to a specific cause or medication.",
+    "tags": [
+      "ALT",
+      "AST",
+      "liver",
+      "bilirubin",
+      "ALP",
+      "guideline"
+    ]
+  },
+  {
+    "id": "fda-ddi-guidance",
+    "title": "FDA Guidance: Clinical Drug Interaction Studies: Cytochrome P450 Enzyme- and Transporter-Mediated Drug Interactions",
+    "organization": "U.S. Food and Drug Administration / Federal Register",
+    "url": "https://www.federalregister.gov/documents/2020/01/23/2020-01064/clinical-drug-interaction-studies-cytochrome-p450-enzyme--and-transporter-mediated-drug-interactions",
+    "published_at": "2020",
+    "version": "Final guidance, January 2020",
+    "evidence_level": "Regulatory guidance",
+    "source_type": "guidance",
+    "summary": "Drug interaction evaluation integrates in vitro, clinical, and modeling data. Not every theoretical interaction is clinically significant.",
+    "content": "FDA guidance describes how to evaluate CYP enzyme- and transporter-mediated drug interactions. It distinguishes sensitive substrates, moderate and strong inhibitors, and inducers, and recommends studies based on mechanism and expected clinical significance. The guidance emphasizes that interaction potential must be interpreted with exposure-response and clinical context. POLIS flags curated, clinically recognized interactions and labels theoretical mechanistic effects separately.",
+    "tags": [
+      "drug interaction",
+      "CYP",
+      "transporter",
+      "inhibition",
+      "induction",
+      "FDA"
+    ]
+  },
+  {
+    "id": "cpic-cyp2c19-phenotypes",
+    "title": "CPIC standardized terms: CYP2C19 genotype and phenotype",
+    "organization": "Clinical Pharmacogenetics Implementation Consortium (CPIC)",
+    "url": "https://cpicpgx.org/alleles/",
+    "published_at": "Accessed 2026",
+    "version": "Living allele definition resource",
+    "evidence_level": "Consensus terminology and allele definitions",
+    "source_type": "guideline",
+    "summary": "CYP2C19 diplotypes map to poor, intermediate, normal, rapid, or ultrarapid metabolizer phenotypes using standardized activity scores. Missing variants can change interpretation.",
+    "content": "CYP2C19 phenotype is assigned from the diplotype using standardized allele function and activity scores. The common *2 and *3 alleles have no function; *17 has increased function. A *2/*17 diplotype is typically classified as intermediate metabolizer because one decreased-function and one increased-function allele are combined. Clinical laboratories should report the assayed variants and limitations. A genotype is only interpretable in the context of the variants tested; an unassayed rare allele can lead to misclassification.",
+    "tags": [
+      "CYP2C19",
+      "diplotype",
+      "phenotype",
+      "activity score",
+      "star allele"
+    ]
+  },
+  {
+    "id": "clinvar-general",
+    "title": "ClinVar variant interpretation database",
+    "organization": "National Center for Biotechnology Information (NCBI)",
+    "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+    "published_at": "Living database",
+    "version": "Accessed 2026",
+    "evidence_level": "Public variant archive with submitter-level evidence",
+    "source_type": "database",
+    "summary": "ClinVar aggregates variant-disease assertions with review status. A classification is not a diagnosis and can change over time.",
+    "content": "ClinVar archives reports of relationships between human genetic variants and phenotypes, together with submitter and review-status information. Assertions range from conflicting to practice guideline. Pharmacogenomic function is often better represented in PharmVar, CPIC, and PharmGKB than in ClinVar, which focuses on Mendelian disease associations. POLIS displays only curated pharmacogenomic interpretations and does not diagnose disease from a variant.",
+    "tags": [
+      "ClinVar",
+      "variant",
+      "evidence",
+      "genetics",
+      "database"
+    ]
+  },
+  {
+    "id": "pharmvar-cyp2d6",
+    "title": "PharmVar gene resource: CYP2D6",
+    "organization": "Pharmacogene Variation Consortium (PharmVar)",
+    "url": "https://www.pharmvar.org/gene/CYP2D6",
+    "published_at": "Living resource",
+    "version": "Accessed 2026",
+    "evidence_level": "Consensus allele nomenclature",
+    "source_type": "database",
+    "summary": "PharmVar defines star alleles and structural variation for pharmacogenes. Accurate CYP2D6 testing must address copy number and hybrids.",
+    "content": "PharmVar provides standardized nomenclature and allele definitions for pharmacogenes. CYP2D6 is particularly complex: alleles can include single-nucleotide variants, deletions, duplications, and hybrid structures with CYP2D7. Copy-number variation and phasing are essential for correct diplotype assignment. Tests differ in which variants they interrogate; a negative result for common variants does not exclude rare decreased- or increased-function alleles.",
+    "tags": [
+      "CYP2D6",
+      "PharmVar",
+      "star allele",
+      "copy number",
+      "structural variation"
+    ]
+  },
+  {
+    "id": "secure-aggregation-2017",
+    "title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+    "organization": "ACM CCS 2017",
+    "url": "https://doi.org/10.1145/3133956.3133982",
+    "published_at": "2017",
+    "version": "Peer-reviewed paper",
+    "evidence_level": "Peer-reviewed cryptographic research",
+    "source_type": "literature",
+    "summary": "Secure aggregation allows a server to learn only the sum of client updates, not individual updates, under stated threat assumptions.",
+    "content": "Bonawitz and colleagues describe a secure aggregation protocol in which clients mask model updates with pairwise and self-generated masks so that the server can compute the aggregate without seeing individual contributions. Security depends on protocol assumptions, participation thresholds, and dropout handling. Secure aggregation protects update confidentiality in transit and during aggregation; it does not by itself prevent inference from repeated aggregates or guarantee anonymity. POLIS's demonstration implements additive masking in a single process and is not a production secure-aggregation deployment.",
+    "tags": [
+      "federated learning",
+      "secure aggregation",
+      "privacy",
+      "cryptography"
+    ]
+  },
+  {
+    "id": "dp-sgd-2016",
+    "title": "Deep Learning with Differential Privacy",
+    "organization": "ACM CCS 2016",
+    "url": "https://doi.org/10.1145/2976749.2978318",
+    "published_at": "2016",
+    "version": "Peer-reviewed paper",
+    "evidence_level": "Peer-reviewed privacy research",
+    "source_type": "literature",
+    "summary": "Differential privacy bounds the influence of any one training example. Privacy budgets must be tracked and interpreted; DP is not a complete anonymity guarantee.",
+    "content": "Abadi and colleagues introduced differentially private stochastic gradient descent with gradient clipping and calibrated noise. Differential privacy provides a mathematical bound on how much an individual's data can affect an output, under a defined neighboring-dataset model. A privacy budget (epsilon) accumulates across queries or training rounds. DP reduces, but does not eliminate, all privacy risks, and utility decreases as privacy protection strengthens. POLIS demonstrates clipping and Gaussian noise with an epsilon accountant; the demonstration is not a formal end-to-end DP proof.",
+    "tags": [
+      "differential privacy",
+      "DP-SGD",
+      "privacy budget",
+      "federated learning",
+      "epsilon"
+    ]
+  },
+  {
+    "id": "aha-acc-cholesterol-2018",
+    "title": "2018 AHA/ACC Multisociety Guideline on the Management of Blood Cholesterol",
+    "organization": "American Heart Association / American College of Cardiology",
+    "url": "https://doi.org/10.1161/CIR.0000000000000625",
+    "published_at": "2019",
+    "version": "2018 guideline",
+    "evidence_level": "Peer-reviewed clinical practice guideline",
+    "source_type": "guideline",
+    "summary": "Cardiovascular risk assessment integrates LDL cholesterol, ApoB context, comorbidities and risk factors. A single lipid value is not a treatment decision.",
+    "content": "The 2018 AHA/ACC multisociety cholesterol guideline recommends a risk-based approach to cholesterol management, using LDL cholesterol and other risk-enhancing factors in context. It emphasizes clinician–patient risk discussion and statin benefit groups rather than treating a single laboratory threshold. POLIS displays lipids and trends as observations and does not determine treatment targets or recommend changing lipid therapy. LDL calculations and reference intervals vary by laboratory and method.",
+    "tags": [
+      "LDL",
+      "cholesterol",
+      "ApoB",
+      "cardiovascular risk",
+      "statin",
+      "guideline"
+    ]
+  },
+  {
+    "id": "cdc-sleep",
+    "title": "About Sleep: CDC",
+    "organization": "U.S. Centers for Disease Control and Prevention",
+    "url": "https://www.cdc.gov/sleep/about/index.html",
+    "published_at": "Accessed 2026",
+    "version": "Public health resource",
+    "evidence_level": "Public health guidance",
+    "source_type": "reference",
+    "summary": "Most adults need at least seven hours of sleep per night. Consumer wearables estimate sleep and can misclassify stages.",
+    "content": "The CDC notes that most adults need at least seven hours of sleep per night for optimal health. Sleep duration and quality are associated with metabolic, cardiovascular, immune and mental health outcomes. Consumer wearables provide estimates of sleep duration and stages using movement and physiological signals; they are not polysomnography and can misclassify sleep stages. A short sleep trend is a prompt for reflection and, if persistent or accompanied by symptoms, discussion with a clinician.",
+    "tags": [
+      "sleep",
+      "wearables",
+      "recovery",
+      "device estimate",
+      "public health"
+    ]
+  },
+  {
+    "id": "fedavg-2017",
+    "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+    "organization": "AISTATS 2017",
+    "url": "https://arxiv.org/abs/1602.05629",
+    "published_at": "2017",
+    "version": "Peer-reviewed paper",
+    "evidence_level": "Peer-reviewed machine learning research",
+    "source_type": "literature",
+    "summary": "Federated averaging trains a shared model by averaging locally computed updates without centralizing raw training data.",
+    "content": "McMahan and colleagues described federated averaging, in which clients perform local optimization on their own data and a server averages model parameters or updates. The approach reduces raw-data centralization but still requires attention to communication efficiency, client heterogeneity, poisoning, and privacy leakage through updates. POLIS's demonstration uses a small locally simulated federation to illustrate the mechanics; it is not connected to real participants or clinical data.",
+    "tags": [
+      "federated learning",
+      "FedAvg",
+      "privacy",
+      "distributed training"
+    ]
+  }
+]
