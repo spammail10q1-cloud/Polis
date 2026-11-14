@@ -1,11 +1,12 @@
 import os
+import tempfile
 import uuid
 from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
 
-TEST_DB = Path("/tmp/opencode/polis_test.db")
+TEST_DB = Path(tempfile.gettempdir()) / f"polis_test_{os.getpid()}.db"
 TEST_DB.unlink(missing_ok=True)
 os.environ["DATABASE_URL"] = f"sqlite:///{TEST_DB}"
 os.environ["SECRET_KEY"] = "polis-test-secret-key-not-for-production"
