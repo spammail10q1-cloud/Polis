@@ -9,5 +9,5 @@ PyJWT==2.15.1
 python-multipart==0.0.33
 pypdf==7.1.0
 numpy==2.5.4
-psycopg2-binary>=2.9.9,<3
+psycopg2-binary>=2.9.13,<3
 httpx==0.28.1
